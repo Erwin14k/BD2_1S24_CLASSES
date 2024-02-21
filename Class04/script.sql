@@ -1,0 +1,31 @@
+CREATE DATABASE bd_backups;
+
+use bd_backups;
+
+CREATE TABLE PACIENTE(
+	idPaciente INT AUTO_INCREMENT PRIMARY KEY,
+    edad INT,
+    genero VARCHAR(20)
+);
+
+CREATE TABLE HABITACION(
+	idHabitacion INT AUTO_INCREMENT PRIMARY KEY,
+    Habitacion VARCHAR(50)
+);
+
+SELECT * FROM PACIENTE;
+SELECT * FROM HABITACION;
+SELECT COUNT(*) FROM PACIENTE;
+SELECT COUNT(*) FROM HABITACION;
+TRUNCATE TABLE PACIENTE;
+TRUNCATE TABLE HABITACION;
+
+
+-- FULL BACKUP
+-- mysqldump -u root -p bd_backups > RUTA_DEL_ARCHIVO
+
+-- INCREMENTAL BACKUP
+-- mysqldump -u root -p bd_backups HABITACION > RUTA_DEL_ARCHIVO
+
+-- Recovery
+-- mysql -u root -p bd_backups < RUTA_DEL_ARCHIVO
