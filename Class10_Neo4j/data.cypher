@@ -78,3 +78,6 @@ CREATE
 (black_swan)-[:BELONGS_TO]->(thriller),
 (titanic)-[:BELONGS_TO]->(romance),
 (the_revenant)-[:BELONGS_TO]->(adeventure);
+
+
+// >< Comments on Cypher, with double // 
