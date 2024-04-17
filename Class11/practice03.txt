@@ -1,0 +1,152 @@
+// ================================== Peliculas ==================================
+
+
+// CRUD - CREAR
+1.
+{
+  "title":"Saw X",
+  "year":2023,
+  "Rating":4.5,
+  "Country":"United States",
+  "Principal_Language":"English",
+  "Director_name":"Diego Mazariegos",
+  "Clasification":"R",
+  "Price":20,
+  "Genre":"Slasher"
+}
+2.
+{
+  "title":"Insidious 4",
+  "year":2024,
+  "Rating":3,
+  "Country":"United States",
+  "Principal_Language":"English",
+  "Director_name":"Felipe Ruiz",
+  "Clasification":"B15",
+  "Price":8,
+  "Genre":"Terror"
+}
+3.
+{
+  "title":"Barbie",
+  "year":2023,
+  "Rating":3,
+  "Country":"United States",
+  "Principal_Language":"English",
+  "Director_name":"Erwin Vásquez",
+  "Clasification":"B",
+  "Price":6,
+  "Genre":"Comedy"
+}
+4.
+{
+  "title":"Terrifier 2",
+  "year":2023,
+  "Rating":5,
+  "Country":"United States",
+  "Principal_Language":"English",
+  "Director_name":"Felipe Ruiz",
+  "Clasification":"R",
+  "Price":12,
+  "Genre":"Terror"
+}
+
+7. Promedio de precio de todas las películas --- (Debería devolver 11.5)
+// CRUD ELIMINAR
+Eliminar película 3
+// Ejecutar endpoint obtener todas
+// Ejecutar endpoint obtener película 4
+// CRUD EDITAR
+Actualizar película 2 - cambiar rating de 3 a 4
+// Ejecutar endpoint obtener todas
+// Ejecutar endpoint obtener película 4
+
+// ENDPOINTS DE CONSULTAS
+
+2. Buscar películas por género (Terror)---- (Debería de devolver película 2, 4)
+3. Mostrar películas con una clasificación R ----(pelicula 4, 1 deberían mostrarse)
+4. Encontrar películas dirigidas por un director específico (Diego Mazariegos)--- (Debería devolver película 1)
+5. Buscar películas con un precio inferior a 10 ----(Debería devolver película 2)
+6. Recuperar películas lanzadas en un año específico (2023)----(Debería devolver las películas 1 y 4)
+7. Promedio de precio de todas las películas--- (Debería devolver 13.33 )
+8. Promedio de precio de todas las películas en base a un género (Terror)--- (Debería devolver 10)
+9. Buscar películas con una palabra clave en el título (x) ---- (Debería devolver película 1)
+9. Buscar películas con una palabra clave en el título (ter)----(Debería devolver película 4)
+
+
+
+// ================================== Series ==================================
+Year: dato numérico
+- Genre: String
+- Rating: dato numérico
+- Seasons: dato numérico
+- Current_Season: dato numérico
+- Price: dato numérico
+
+// CRUD - CREAR
+1.
+{
+  "title":"Cobra Kai",
+  "year":2020,
+  "Rating":5,
+  "Seasons":5,
+  "Current_Season":5
+  "Price":20,
+  "Genre":"Action"
+}
+2.
+{
+  "title":"Flash",
+  "year":2017,
+  "Rating":4.5,
+  "Seasons":10,
+  "Current_Season":9
+  "Price":9,
+  "Genre":"Science Fiction"
+}
+3.
+{
+  "title":"Alice in Borderland",
+  "year":2022,
+  "Rating":5,
+  "Seasons":3,
+  "Current_Season":2
+  "Price":9,
+  "Genre":"Action"
+}
+4.
+{
+  "title":"The Resident",
+  "year":2018,
+  "Rating":5,
+  "Seasons":7,
+  "Current_Season":6
+  "Price":20,
+  "Genre":"Medical"
+}
+5.
+{
+  "title":"Greys Anatomy",
+  "year":2005,
+  "Rating":5,
+  "Seasons":21,
+  "Current_Season":20
+  "Price":20,
+  "Genre":"Medical"
+}
+
+// Ejecutar endpoint obtener todas
+// Ejecutar endpoint obtener serie 1
+7. Promedio de precio de todas las series --- (Debería devolver 15.6)
+// CRUD ELIMINAR (Eliminar serie 5)
+// CRUD Actualizar (Actualizar rating serie 4, de 5 a 4.5)
+// Ejecutar endpoint obtener todas
+2. Buscar series por género (Action)---- (Debería devolver serie 1 y 3)
+2. Buscar series por género (Science Fiction)---- (Debería devolver serie 2)
+3. Mostrar series que tengan más de 2 temporadas----(Debería de devolver todas)
+4. Encontrar series que estén en una temporada específica (5) ---- (Debería devolver serie 1)
+5. Buscar series con un precio inferior a 10 --- (Debería devolver series 2 y 3)
+6. Recuperar series estrenadas en un año específico (2018)---(Debería devolver serie 4)
+7. Promedio de precio de todas las series --- (Debería devolver 14.5)
+8. Ordenar series por rating ---- (Debería devolver el siguiente orden: 1,3,4,2)
+9. Buscar series con una palabra clave en el título (Cob) // Debería devolver Cobra kai
